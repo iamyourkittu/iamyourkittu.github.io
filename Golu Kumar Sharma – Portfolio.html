@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Golu Kumar Sharma – Maintenance Technician</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDEFF1; --paper:#F8F9FA; --ink:#17222D; --muted:#566574; --line:#17222D; --soft:#C9D0D6; --accent:#C2410C;
+  color-scheme: light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#10171E; --paper:#18222B; --ink:#E7ECF0; --muted:#9AA8B5; --line:#E7ECF0; --soft:#2C3945; --accent:#FB923C; color-scheme: dark;}
+}
+:root[data-theme="dark"]{--bg:#10171E; --paper:#18222B; --ink:#E7ECF0; --muted:#9AA8B5; --line:#E7ECF0; --soft:#2C3945; --accent:#FB923C; color-scheme: dark;}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Barlow',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:17px;line-height:1.6}
+.wrap{max-width:880px;margin:0 auto;padding:28px 20px 64px}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',Impact,sans-serif;margin:0;line-height:1.05}
+h1{font-size:clamp(46px,11vw,88px);font-weight:700;letter-spacing:.01em}
+h2{font-size:28px;font-weight:700;margin-bottom:14px}
+a{color:inherit}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* title block */
+.sheet{background:var(--paper);border:2px solid var(--line)}
+.hero{padding:28px 24px 24px}
+.hero p.role{font-size:20px;color:var(--muted);margin:12px 0 0;max-width:34em}
+.tb{display:grid;grid-template-columns:repeat(2,1fr);border-top:2px solid var(--line)}
+.tb div{padding:12px 24px;border-bottom:1px solid var(--soft)}
+.tb div:nth-child(odd){border-right:1px solid var(--soft)}
+.tb dt{font-size:14px;color:var(--muted)}
+.tb dd{margin:0;font-weight:600}
+.tb .tenure dd{color:var(--accent);font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;line-height:1.2}
+@media (max-width:560px){.tb{grid-template-columns:1fr}.tb div:nth-child(odd){border-right:0}}
+
+section{margin-top:44px}
+.lead{max-width:40em;margin:0}
+
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:520px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--soft);vertical-align:top}
+th{font-weight:600;color:var(--muted);font-size:15px;border-bottom:2px solid var(--line)}
+td:first-child{font-weight:600}
+
+ul.tasks{margin:0;padding-left:20px;max-width:42em}
+ul.tasks li{margin:6px 0}
+.skills{display:flex;flex-wrap:wrap;gap:8px;padding:0;margin:0;list-style:none}
+.skills li{border:1.5px solid var(--line);padding:5px 12px;background:var(--paper)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+@media (max-width:640px){.cols{grid-template-columns:1fr}}
+.edu p{margin:0 0 14px}
+.edu small{color:var(--muted);display:block}
+
+.contact{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:12px 20px;border:2px solid var(--line);font-weight:600;text-decoration:none;background:var(--paper)}
+.btn.main{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn:hover{border-color:var(--accent)}
+footer{margin-top:48px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="sheet">
+    <header class="hero">
+      <h1>Golu Kumar Sharma</h1>
+      <p class="role">Maintenance technician for CNC, HMC and VMC machines. I keep production lines running and cut downtime.</p>
+    </header>
+    <dl class="tb" style="margin:0">
+      <div><dt>Designation</dt><dd>Senior Associate Engineer</dd></div>
+      <div><dt>Company</dt><dd>Nisshinbo Comprehensive Precision Machining (Gurgaon) Pvt Ltd</dd></div>
+      <div class="tenure"><dt>Time in this role</dt><dd id="tenure">3 years</dd></div>
+      <div><dt>Location</dt><dd>Siwan, Bihar</dd></div>
+    </dl>
+  </div>
+
+  <section>
+    <h2>About</h2>
+    <p class="lead">I am a maintenance technician with 3 years of experience in CNC manufacturing. I handle preventive and breakdown maintenance on CNC, HMC and VMC machines, and I focus on troubleshooting quickly, reducing downtime and improving machine efficiency.</p>
+  </section>
+
+  <section>
+    <h2>Machines I work on</h2>
+    <div class="scroll">
+      <table>
+        <thead><tr><th>Make</th><th>Machine</th><th>My work</th></tr></thead>
+        <tbody>
+          <tr><td>Makino</td><td>J3, L2, Slim3i (HMC &amp; VMC)</td><td>Preventive and breakdown maintenance, troubleshooting</td></tr>
+          <tr><td>Sugino</td><td>High-pressure washing machine and dryer machine</td><td>Operation and maintenance</td></tr>
+          <tr><td>Mitsubishi</td><td>AOI robotic system (Automated Optical Inspection)</td><td>Operation and troubleshooting</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>What I do day to day</h2>
+    <ul class="tasks">
+      <li>Maintain and troubleshoot CNC, HMC and VMC machines.</li>
+      <li>Carry out preventive and breakdown maintenance.</li>
+      <li>Operate and maintain high-pressure washing and dryer machines.</li>
+      <li>Operate and troubleshoot AOI machines.</li>
+      <li>Keep detailed maintenance logs, check sheets and machine history.</li>
+      <li>Follow safety standards and 5S workplace practices.</li>
+      <li>Contribute to improvements that make machines more reliable.</li>
+    </ul>
+  </section>
+
+  <section class="cols">
+    <div>
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>CNC maintenance</li><li>HMC &amp; VMC</li><li>Preventive maintenance</li><li>Breakdown maintenance</li><li>AOI operation</li><li>Machine documentation</li><li>MS Excel</li><li>MS Word</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Strengths</h2>
+      <ul class="skills">
+        <li>Hard working</li><li>Quick learner</li><li>Team player</li><li>Problem solving</li><li>Safety conscious</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="edu">
+    <h2>Education</h2>
+    <p><strong>Diploma in Electronics and Communication Engineering</strong><small>Government Polytechnic, Sonipat, 2023</small></p>
+    <p><strong>Senior Secondary</strong><small>Bihar School Examination Board, Patna, 2019</small></p>
+    <p><strong>Secondary</strong><small>Bihar School Examination Board, Patna, 2017</small></p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="contact">
+      <a class="btn main" href="mailto:mrgk382@gmail.com">Email me</a>
+      <a class="btn" href="tel:+918873131398">Call +91 88731 31398</a>
+    </div>
+  </section>
+
+  <footer>Golu Kumar Sharma, Siwan, Bihar</footer>
+</main>
+<script>
+(function(){
+  try{
+    var s=new Date(2023,7,2),n=new Date();
+    var m=(n.getFullYear()-s.getFullYear())*12+(n.getMonth()-s.getMonth());
+    if(n.getDate()<s.getDate())m--;
+    if(m<0)return;
+    var y=Math.floor(m/12),r=m%12,t=[];
+    if(y)t.push(y+(y===1?' year':' years'));
+    if(r)t.push(r+(r===1?' month':' months'));
+    if(t.length)document.getElementById('tenure').textContent=t.join(' ');
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
